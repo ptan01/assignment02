@@ -134,17 +134,19 @@ nav ul{
     margin-bottom: 10px;
     width: 585px;
     height: 170px;
+    border-radius: 8px;
     box-shadow:   0 0 0 2px rgb(255, 255, 255),
-    0.3em 0.3em 1em rgba(0, 0, 0, 0.186);;
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.186);
 }
 
 .button-position{
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
     bottom: 200px;
-    left: 90px;
+    left: 300px;
 }
 .big-button{
     width: 340px;
@@ -156,13 +158,78 @@ nav ul{
     border: 0px;
     border-radius: 10px;
 }
+ /*==============================
+        main 3rd content styles
+  =============================== */
 
-
-
-
-
-
-
+  .facts-container{
+   display: flex;
+   justify-content: center;
+   position: relative;
+   right:400px;
+  }
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.box-squre-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    margin-top: 100px;
+}
+.box-squre{
+    width: 240px;
+    height: 240px;
+    border: 1px solid var(--pry-color);
+    box-shadow:   0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.186);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box-squre:hover{
+    background-color:var(--pry-color);
+    transform: scale(1.1);
+}
+.box-number{
+    font-size: 40px;
+    font-weight: 700;
+}
+  /*====================
+        footer style 
+   =====================*/
+   .sponspors-container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin-top: 180px;
+   }
+   .sponsors-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    margin-top: 50px;
+   }
+    .sponsors-img{
+        filter: grayscale(1);
+    }
+    .end-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        height: 55px;
+        margin: 100px auto;
+        background-color: #ff900e1a ;
+    }
 
 
 
@@ -238,11 +305,19 @@ nav ul{
         bottom: 0px;
         left: 0px;
     }
-   
-   
-
-
-
+    /*------ main thard responsive------- */
+    .facts-container{
+       right: 0px;
+    }
+    .box-squre-container{
+        flex-direction: column;
+    }
+    /* --------------
+        footer 
+       -------------*/
+    .sponsors-img-container{
+        flex-direction: column;
+    }
 
 
 
