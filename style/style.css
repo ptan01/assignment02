@@ -134,6 +134,7 @@ nav ul{
     margin-bottom: 10px;
     width: 585px;
     height: 170px;
+    padding: 5px;
     border-radius: 8px;
     box-shadow:   0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.186);
@@ -201,6 +202,21 @@ nav ul{
     font-size: 40px;
     font-weight: 700;
 }
+/*====================== 
+extra section styles
+======================== */
+    .extra-container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:center;
+        align-items: center;
+        gap: 100px;
+        margin-top: 200px;    
+    }
+    .link{
+        text-decoration: none;
+    }
+    
   /*====================
         footer style 
    =====================*/
@@ -234,20 +250,12 @@ nav ul{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*===========================================
         responsive styles for smart phone 
  ============================================*/
+
+
+
  @media only screen and (max-width:576px) {
     /* ---------header responsive--------- */
     
@@ -289,7 +297,7 @@ nav ul{
         height: 300px;
     }
     .boxes{
-        width: 250px;
+        width: 260px;
         height: 300px;
     }
     .img-architect{
@@ -309,17 +317,19 @@ nav ul{
     .facts-container{
        right: 0px;
     }
-    .box-squre-container{
-        flex-direction: column;
+    /* extra section responsive */
+    .extra-container img{
+        width: 100%;
     }
+     
     /* --------------
-        footer 
+        footer and some primary style
        -------------*/
-    .sponsors-img-container{
+    .sponsors-img-container,.extra-container,.box-squre-container{
         flex-direction: column;
     }
 
-
+  
 
 
 
